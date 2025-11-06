@@ -1,7 +1,17 @@
-html {
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  color: white;
   background: radial-gradient(circle at top left, #0f172a, #030014);
+  background-attachment: fixed; /* biar gradasi nggak ikut geser saat scroll */
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
 }
+
 
 /* Intro Overlay */
 /* .intro-page {
@@ -93,7 +103,7 @@ section {
 }
 
 .sosmed a {
-    background-color: #030014;
+    background: radial-gradient(circle at top left, #0f172a, #030014);
     color: white;
     height: 40px;
     width: 40px;
@@ -151,9 +161,9 @@ section {
 /* Efek hover untuk card */
 .card {
   transition: all 0.4s ease;
-  /* border: 1px solid #0d6efd; */
   box-shadow: #1a1a1a;
-  background-color: #1a1a1a;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .card:hover {
@@ -180,17 +190,6 @@ section {
 #projects {
   margin-bottom: 120px; /* bisa sesuaikan */
 }
-
-
-body {
-  background: radial-gradient(circle at top left, #0f172a, #030014);
-  color: white;
-  height: 100vh;
-  overflow-x: hidden;
-  font-family: 'Poppins', sans-serif;
-
-}
-
 
 /* efek cursor */
 .trail {
@@ -228,9 +227,6 @@ body {
   50% { border-color: #40ffaa; }
 }
 
-#contact {
-  background: radial-gradient(circle at top left, #0f172a, #030014);
-}
 
 /* --- TEXT GRADIENT --- */
 .gradient-text {
