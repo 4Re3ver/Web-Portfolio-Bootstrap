@@ -1,0 +1,229 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Intro Overlay */
+/* .intro-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+.intro-page.fade-out {
+  opacity: 0;
+} */
+
+ /* Optional: gradient text for name */
+.text-gradient {
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-in-out;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+section {
+  padding-top: 80px;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #40ffaa, #4079ff); /* ganti warnanya */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-glass {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1); /* transparan */
+    backdrop-filter: blur(10px); /* efek blur */
+    border-radius: 15px; /* sudut membulat */
+    padding: 0.4rem 1rem; /* jarak dalam kotak */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+}
+
+
+.navbar-glass .nav-link {
+    color: white;
+    margin: 0 0.5rem;
+    padding: 0.4rem 1rem;
+}
+
+.navbar-glass .nav-link:hover {
+    color: #40ffaa; /* warna hover */
+}
+
+.profil img {
+    border: 1px solid #40ffaa; /* border biru */
+    transition: all 0.4s ease;
+    box-shadow: 0 0 20px rgba(40, 126, 255, 0.721);
+
+}
+
+.profil img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(40, 126, 255, 0.721); 
+    border-color: #61a0ff;
+}
+
+.sosmed {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.sosmed a {
+    background-color: #030014;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;                   /* untuk center ikon */
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.sosmed a:hover {
+    background: linear-gradient(90deg, #40ffaa, #4079ff);
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+
+.skill-box {
+  background-color: #1a1a1a;       /* warna kotak */
+  border: 1px solid #40ffaa;       /* border biru Bootstrap */
+  border-radius: 10px;             /* sudut melengkung */
+  padding: 10px;
+  width: 400px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px rgba(13, 110, 253, 0.2); /* glow lembut */
+  gap: 35px;
+}
+
+.box-1 {
+  background-color: #1a1a1a;       /* warna kotak */
+  border: 1px solid #0d6efd;
+  border-radius: 10px;             /* sudut melengkung */
+  width: 1400px;           /* panjang kanan-kiri */
+  height: auto;            /* otomatis menyesuaikan isi */
+  margin: 40px auto;  
+}
+
+.skill-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(13, 110, 253, 0.6); /* efek glow saat hover */
+  border-color: #61a0ff;
+}
+
+.skill-box img {
+  max-width: 60%;
+  height: auto;
+  filter: brightness(1.1);
+}
+
+/* Efek hover untuk card */
+.card {
+  transition: all 0.4s ease;
+  /* border: 1px solid #0d6efd; */
+  box-shadow: #1a1a1a;
+  background-color: #1a1a1a;
+}
+
+.card:hover {
+  transform: translateY(-15px); /* naik sedikit */
+  box-shadow: 0 2px 15px rgba(9, 116, 255, 0.615) !important; /* glow biru */
+  border-color: #40ffaa !important; /* border biru */
+}
+
+/* Efek tombol agar juga terasa interaktif */
+.card .btn {
+  transition: all 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #0d6efd;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.form-label {
+  color: rgb(104, 104, 104);
+}
+
+#projects {
+  margin-bottom: 120px; /* bisa sesuaikan */
+}
+
+
+body {
+  background: #030014;
+  color: white;
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
+/* efek cursor */
+.trail {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #679dee;
+  border-radius: 50%;
+  pointer-events: none;
+  
+  animation: fade 0.8s linear;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%,  /* bentuk bintang */
+                     68% 57%, 79% 91%, 50% 70%, 
+                     21% 91%, 32% 57%, 2% 35%, 
+                     39% 35%);
+  box-shadow: 0 0 15px 6px rgba(13, 195, 255, 0.6);
+}
+
+@keyframes fade {
+  from { opacity: 1; transform: scale(1); }
+  to { opacity: 0; transform: scale(2); }
+}
+
+#typing {
+  border-right: 3px solid #40ffaa;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blink 0.7s infinite;
+  min-height: 1.5em;
+}
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: #40ffaa; }
+}
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <!-- Bootstrap lokal -->
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+    <!-- CSS custom -->
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+</head>
+<body>
+    <body class="bg-dark text-light">
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar fixed-top mt-3">
+        <div class="container justify-content-center">
+        <div class="navbar-glass d-flex align-items-center">
+            <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#about me">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 pt-5">
+        <h1 class="mt-5 text-center fw-bold">Coming soon.</h1>
+    </div>
+
+    <script>
+        document.addEventListener('mousemove', e => {
+        const trail = document.createElement('span');
+        trail.classList.add('trail');
+        trail.style.left = e.pageX + 'px';
+        trail.style.top = e.pageY + 'px';
+        document.body.appendChild(trail);
+
+        // hapus partikel setelah setengah detik
+        setTimeout(() => trail.remove(), 300);
+        });
+    </script>
+    
+</body>
+</html>
