@@ -23,6 +23,11 @@
 
 <body class="text-light">
 
+  <!-- Intro Overlay -->
+  <!-- <div id="intro" class="intro-page">
+    <h1 class="fw-bold">Welcome to My Portfolio</h1>
+    <p>Hi, I'm <span class="text-gradient">Arifa Fitra</span></p>
+  </div> -->
 
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar fixed-top mt-3">
@@ -30,7 +35,6 @@
       <div class="navbar-glass d-flex align-items-center">
         <ul class="nav">
           <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about me">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
@@ -41,56 +45,71 @@
 
 
 
-  <!-- ===== HERO SECTION ===== -->
-  <section id="home" class="d-flex flex-column justify-content-center align-items-center vh-100 text-center mb-4">
-    <div class="profil">
-      <img src="../praktikum_4/image.jpg" class="rounded-circle mb-4 mt-2" alt="Profile" width="300" height="300">
+  <!-- ===== HERO + ABOUT SECTION (digabung) ===== -->
+<section id="home" class="d-flex align-items-center vh-100 text-light">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Kolom kiri: teks -->
+      <div class="col-md-7 text-start">
+
+        <div class="sosmed mb-4">
+          <a href="https://github.com/4Re3ver" class="icon me-3" target="_blank"><i class="ri-github-fill"></i></a>
+          <a href="https://www.instagram.com/arrifaftr/" class="icon me-3" target="_blank"><i class="ri-instagram-line"></i></a>
+          <a href="https://www.linkedin.com/in/arifa-fitra-940802318" class="icon" target="_blank"><i class="ri-linkedin-box-line"></i></a>
+        </div>
+
+        <h1 class="fw-bold mb-3">Hi, I'm <span class="text-gradient">Arifa Fitra Salima.</span></h1>
+        <p id="typing" class="lead fs-4 mb-4"></p>
+
+        
+
+        <!-- <h2 class="text-gradient mb-3 text-primary fw-bold">About Me</h2> -->
+        <p>
+          Hi! I’m Arifa👋 a tech enthusiast who loves exploring programming, web development, and cybersecurity.
+          I enjoy building small projects, learning new things, and challenging myself through CTFs and creative problem-solving.
+          I’m always curious about how things work and how I can make them better.
+          Outside of tech, I love to reflect, create, and keep growing in my own way.
+        </p>
+      </div>
+
+      <!-- Kolom kanan: foto -->
+      <div class="profil col-md-5 text-center mt-4 mt-md-0">
+        <img src="../praktikum_4/image.jpg" class="rounded-circle shadow-lg" alt="Profile" width="300" height="300">
+      </div>
+
     </div>
-    
+  </div>
+</section>
 
-    <div class="sosmed justify-content-center">
-      <a href="https://github.com/4Re3ver" class="icon" target="_blank"><i class="ri-github-fill"></i></a>
-      <a href="https://www.instagram.com/arrifaftr/" class="icon" target="_blank"><i class="ri-instagram-line"></i></a>
-      <a href="https://www.linkedin.com/in/arifa-fitra-940802318" class="icon" target="_blank"><i class="ri-linkedin-box-line"></i></a>
-    </div>
-    
-    <h1 class="fw-bold">Hi, I'm <span class="text-gradient">Arifa.</span></h1>
-    <p id="typing" class="lead text-light fs-4" ></p>
+   
 
-
-    <!-- <a href="#projects" class="btn btn-primary mt-3 mb-5">View My Work</a> -->
-
-  </section>
-
- 
-
-  <!-- ===== ABOUT ME ===== -->
-  <section id="about me" class="py-4 mb-5 text-light">
-    <div class="container"> 
-      <div class="container">  
-        <div class="row align-items-start">
-          <div class="col-md-7 text-start fade-in">
-            <h2 class="text-gradient mb-4 text-primary fw-bold">About Me</h2>
-            <p>Hi! I’m Arifa — a tech enthusiast who loves exploring programming, web development, and cybersecurity. I enjoy building small projects, learning new things, and challenging myself through CTFs and creative problem-solving. I’m always curious about how things work and how I can make them better. Outside of tech, I love to reflect, create, and keep growing in my own way. </p>           
+  <!-- ===== SKILLS ===== -->
+  <!-- <section id="skills" class="py-5 bg-dark">
+    <div class="container">
+      <h2 class="text-center mb-5 text-primary fw-bold">My Skills</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-3 text-center fade-in">
+          <h5 class="mb-3">HTML</h5>
+          <div class="progress">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
           </div>
-
-          <div class="col-md-5 text-center text-md-end mb-4 mb-md-0 fade-in">
-            <h2 class="text-gradient mb-4 text-primary text-center fw-bold">Tech Stack</h2>
-            <div class="d-flex flex-wrap justify-content-center justify-content-md-center gap-3">
-              <div class="skill-box">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="50" height="50"/>
-              
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="50" height="50"/>
-                
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="50" height="50"/>
-                
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="50" height="50"/>
-              </div>         
+        </div>
+        <div class="col-md-3 text-center fade-in">
+          <h5 class="mb-3">CSS</h5>
+          <div class="progress">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
           </div>
+        </div>
+        <div class="col-md-3 text-center fade-in">
+          <h5 class="mb-3">JavaScript</h5>
+          <div class="progress">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-   
+  </section> -->
 
 
   <!-- ===== PROJECTS ===== -->
@@ -143,40 +162,76 @@
   </section>
 
   <!-- ===== CONTACT ===== -->
-  <section id="contact" class="py-5 mt-6  text-light">
-    <div class="container">
-        <h2 class="text-gradient text-center mb-4 fw-bold">
-        Contact Me
-        </h2>
+  <section id="contact" class="py-5 text-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4 gradient-text">
+      Hubungi Saya
+    </h2>
+    <p class="text-center text-secondary mb-5">
+      Punya pertanyaan atau saran? Kirimkan pesan Anda di bawah ini 👇
+    </p>
 
-        <div class="row justify-content-center">
-        <div class="col-md-8 col-lg-6">
-            <div class="card bg-dark border border-primary shadow-lg p-4 rounded-4">
-            <form>
-                <div class="mb-3">
-                <label for="name" class="form-label"><i class="bi bi-person-fill me-2"></i>Nama</label>
-                <input type="text" class="form-control bg-body-secondary border-0" id="name" placeholder="Your Name">
-                </div>
-
-                <div class="mb-3">
-                <label for="email" class="form-label"><i class="bi bi-envelope-fill me-2"></i>Email</label>
-                <input type="email" class="form-control bg-body-secondary border-0" id="email" placeholder="Your Email">
-                </div>
-
-                <div class="mb-3">
-                <label for="message" class="form-label"><i class="bi bi-chat-dots-fill me-2"></i>Pesan</label>
-                <textarea class="form-control bg-body-secondary border-0" id="message" rows="4" placeholder="Tulis pesan..."></textarea>
-                </div>
-
-                <div class="d-grid">
-                <button type="submit" class="btn btn-primary btn-lg fw-semibold">Kirim</button>
-                </div>
-            </form>
+    <div class="row justify-content-center g-4">
+      <!-- FORM CARD -->
+      <div class="col-lg-5">
+        <div class="card contact-card shadow-lg p-4 rounded-4">
+          <div class="d-flex justify-content-between align-items-start mb-4">
+            <div>
+              <h4 class="fw-bold mb-1 gradient-text">Hubungi</h4>
+              <p class="text-secondary small mb-0">
+                Kirim pesan dan mari berdiskusi.
+              </p>
             </div>
+            <i class="bi bi-share text-primary fs-3 opacity-50"></i>
+          </div>
+
+          <form id="contact-form">
+            <div class="mb-3 position-relative">
+              <i class="bi bi-person-fill icon-left"></i>
+              <input type="text" class="form-control input-field" placeholder="Nama Anda" required />
+            </div>
+
+            <div class="mb-3 position-relative">
+              <i class="bi bi-envelope-fill icon-left"></i>
+              <input type="email" class="form-control input-field" placeholder="Email Anda" required />
+            </div>
+
+            <div class="mb-3 position-relative">
+              <i class="bi bi-chat-dots-fill icon-left top-textarea"></i>
+              <textarea class="form-control input-field" rows="4" placeholder="Pesan Anda..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn w-100 py-3 fw-semibold text-white gradient-btn">
+              <i class="bi bi-send-fill me-2"></i>Kirim Pesan
+            </button>
+          </form>
+
+          <div class="text-center mt-4 border-top border-secondary pt-3">
+            <a href="#" class="text-decoration-none text-secondary mx-2"><i class="bi bi-github fs-4"></i></a>
+            <a href="#" class="text-decoration-none text-secondary mx-2"><i class="bi bi-linkedin fs-4"></i></a>
+            <a href="#" class="text-decoration-none text-secondary mx-2"><i class="bi bi-instagram fs-4"></i></a>
+          </div>
         </div>
+      </div>
+
+      <!-- SIDE CARD / KOMENTAR -->
+      <div class="col-lg-5">
+        <div class="card contact-card shadow-lg p-4 rounded-4">
+          <h5 class="fw-bold mb-3 gradient-text">Komentar Terbaru</h5>
+          <p class="text-secondary small mb-3">
+            Belum ada komentar, jadilah yang pertama meninggalkan pesan!
+          </p>
+          <div class="d-flex align-items-center text-secondary small">
+            <i class="bi bi-chat-dots me-2 text-primary"></i>
+            <span>Komentar Anda akan muncul di sini setelah dikirim.</span>
+          </div>
         </div>
+      </div>
     </div>
-    </section>
+  </div>
+</section>
+
+
 
 
   <!-- ===== FOOTER ===== -->
@@ -279,4 +334,3 @@
 
 </body>
 </html>
-
