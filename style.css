@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  background: radial-gradient(circle at top left, #0f172a, #030014);
 }
 
 /* Intro Overlay */
@@ -73,9 +74,9 @@ section {
 }
 
 .profil img {
-    border: 1px solid #40ffaa; /* border biru */
+    border: 2px solid #40ffaa; /* border biru */
     transition: all 0.4s ease;
-    box-shadow: 0 0 20px rgba(40, 126, 255, 0.721);
+    box-shadow: 0 0 20px rgba(40, 126, 255, 0.721) !important;
 
 }
 
@@ -88,7 +89,7 @@ section {
 .sosmed {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 15px;
 }
 
 .sosmed a {
@@ -182,7 +183,7 @@ section {
 
 
 body {
-  background: #030014;
+  background: radial-gradient(circle at top left, #0f172a, #030014);
   color: white;
   height: 100vh;
   overflow-x: hidden;
@@ -227,3 +228,85 @@ body {
   50% { border-color: #40ffaa; }
 }
 
+#contact {
+  background: radial-gradient(circle at top left, #0f172a, #030014);
+}
+
+/* --- TEXT GRADIENT --- */
+.gradient-text {
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* --- CARD STYLE (Glassmorphism) --- */
+.contact-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.2);
+}
+
+/* --- INPUT STYLE --- */
+.input-field {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 12px;
+  padding-left: 15px !important;
+  transition: all 0.3s ease;
+}
+
+.input-field::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.input-field:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(99, 102, 241, 0.25);
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* --- ICONS INSIDE INPUT --- */
+.icon-left {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none;
+}
+
+.top-textarea {
+  top: 22px !important;
+  transform: none !important;
+}
+
+/* --- BUTTON GRADIENT --- */
+.gradient-btn {
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  border: none;
+  border-radius: 12px;
+  transition: all 0.25s ease;
+}
+
+.gradient-btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
+}
+
+.gradient-btn:active {
+  transform: scale(0.98);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .contact-card {
+    margin-bottom: 1.5rem;
+  }
+}
